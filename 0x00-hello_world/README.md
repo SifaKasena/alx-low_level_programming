@@ -6,3 +6,4 @@
 5-printf.c - prints with proper grammar, but the outcome is a piece of art,
 6-size.c - prints the size of various data types
 100-intel - generates assembly code in intel syntax
+101-quote.c - prints and that piece of art is useful" - Dora Korpar, 2015-10-19 to standard error
