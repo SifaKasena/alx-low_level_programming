@@ -3,11 +3,12 @@
 /**
  * main - Entry point
  *
- * turn: always (0) Success
+ * return: always (0) Success
  */
 int main(void)
 {
 	char c = 'a';
+
 	while (c <= 'z')
 		putchar(c++);
 	putchar('\n');
