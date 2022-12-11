@@ -19,7 +19,7 @@ int main(void)
 			for (c = '0'; c <= '9'; c++)
 			{
 				d = '0';
-				while (d <= '9' && (c > a || (c == a && d > b))
+				while (d <= '9' && (c > a || (c == a && d > b)))
 				{
 					putchar(a);
 					putchar(b);
