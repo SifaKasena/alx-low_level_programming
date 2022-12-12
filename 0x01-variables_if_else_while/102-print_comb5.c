@@ -30,8 +30,11 @@ int main(void)
 					}
 					if (a == '9' && b == '8')
 						break;
-					putchar(',');
-					putchar(' ');
+					if (c > a || (c == a && d > b))
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
