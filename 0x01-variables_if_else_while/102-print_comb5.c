@@ -28,7 +28,7 @@ int main(void)
 						putchar(c);
 						putchar(d);
 					}
-					if (a == '9' && b == '8')
+					if (a == '9' && b > '8')
 						break;
 					if (c > a || (c == a && d > b))
 					{
