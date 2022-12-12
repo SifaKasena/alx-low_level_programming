@@ -18,20 +18,20 @@ int main(void)
 		{
 			for (c = '0'; c <= '9'; c++)
 			{
-				d = '0';
-				while (((c == a && d > b) || c > a) && d <= '9')
+				for (d = '0'; d <= '9'; d++)
 				{
-					putchar(a);
-					putchar(b);
-					putchar(' ');
-					putchar(c);
-					putchar(d++);
-					if (a == '9' && b == '8')
+					if (c > a || (c == a && d > b))
 					{
-						break;
+						putchar(a);
+						putchar(b);
+						putchar(' ');
+						putchar(c);
+						putchar(d);
+						if (a == '9' && b == '8')
+							break;
+						putchar(',');
+						putchar(' ');
 					}
-					putchar(',');
-					putchar(' ');
 				}
 			}
 		}
