@@ -1,42 +1,41 @@
 #include <stdio.h>
-
 /**
- * main - entry point
- * Description: print unique combinations of double dogit numbers
- * Return: always (0) success
+ * main - Entry point
+ * Description: print all possible cominations of two-digit numbers
+ * from 00 to 99.
+ * Return: 0
  */
 int main(void)
 {
-	int a;
-	int b;
-	int c;
-	int d;
+	int i, j;
+	int a, b, c, d;
 
-	for (a = '0'; a <= '9'; a++)
+	for (i = 0; i < 100; i++)
 	{
-		for (b = '0'; b <= '9'; b++)
+		a = i / 10; /* doubles fnum */
+		b = i % 10; /* singles fnum */
+
+		for (j = 0; j < 100; j++)
 		{
-			for (c = '0'; c <= '9'; c++)
+			c = j / 10; /* doubles snum */
+			d = j % 10; /* singles snum */
+
+			if (a < c || (a == c && b < d))
 			{
-				for (d = '0'; d <= '9'; d++)
+				putchar(a + '0');
+				putchar(b + '0');
+				putchar(32);
+				putchar(c + '0');
+				putchar(d + '0');
+
+				if (!(a == 9 && b == 8))
 				{
-					if (c > a || (c == a && d > b))
-					{
-						putchar(a);
-						putchar(b);
-						putchar(' ');
-						putchar(c);
-						putchar(d);
-					}
-					if (a != '9' && b != '8' && (c > a || (c == a && d > b)))
-					{
-						putchar(',');
-						putchar(' ');
-					}
+					putchar(44);
+					putchar(32);
 				}
 			}
 		}
 	}
-	putchar('\n');
+	putchar(10);
 	return (0);
 }
