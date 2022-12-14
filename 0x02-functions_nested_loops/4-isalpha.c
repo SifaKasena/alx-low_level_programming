@@ -2,6 +2,7 @@
 
 /**
  * _isalpha - checks whether a character is an alphabetical character
+ * @c: character to ne checked
  * Return: 1 - true; 0 - false
  */
 
