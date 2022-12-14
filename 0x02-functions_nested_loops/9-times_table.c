@@ -24,7 +24,7 @@ void times_table(void)
 			}
 			if (b != 9)
 			{
-				if (a+b >= 6 && a >= 2)
+				if (a + b >= 6 && a >= 2 && b > 0)
 				{
 					_putchar(',');
 					_putchar(' ');
