@@ -2,20 +2,19 @@
 #include <stdio.h>
 
 /**
- * print_line - draws a straight line in the terminal
- * @n: number of times to print _ character
+ * print_diagonal - draws a digonal line on the terminal
+ * @n: number of times to print character _
  * Return: void
  */
 
 void print_line(int n)
 {
-	if (n > 0)
+	int i;
+
+	while (n > 0)
 	{
-		while (n > 0)
-		{
-			_putchar('_');
-			n--;
-		}
+		_putchar('_');
+		n--;
 	}
-	-putchar('\n');
+	_putchar('\n');
 }
