@@ -2,21 +2,19 @@
 #include <stdio.h>
 
 /**
- * more_numbers - pints 0 to 14 ten times
+ * print_most_numbers - pints numbers 0 to 9 apart from 2 and 4
  * Return: void
  */
 
-void more_numbers(void)
+void print_most_numbers(void)
 {
-	int i, c;
+	int n = '0';
 
-	for (i = 0; i < 10; i++)
+	while (n <= '9')
 	{
-		c = 0;
-		while (c < 14)
-		{
-			_putchar(c + '0');
-		}
-		_putchar('\n);
+		if (n != '2' || n != '4')
+			_putchar(n);
+		n++;
 	}
+	_putchar('\n');
 }
