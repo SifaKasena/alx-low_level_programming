@@ -9,5 +9,5 @@
 
 int _isupper(int c)
 {
-	return (c > 96 && c < 123);
+	return (c >= 'A' && c <= 'Z');
 }
