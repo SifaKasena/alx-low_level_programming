@@ -4,6 +4,7 @@
  * main - tests the function that prints whether an int is negative or positive
  * Return: (0) success
  */
+
 int main(void)
 {
 	int i;
