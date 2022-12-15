@@ -7,5 +7,5 @@
 
 int _islower(int c)
 {
-	return (c > 64 && c <= 90);
+	return (c >= 'a' && c <= 'z');
 }
