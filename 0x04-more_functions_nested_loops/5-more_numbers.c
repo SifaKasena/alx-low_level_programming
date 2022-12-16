@@ -8,13 +8,22 @@
 
 void more_numbers(void)
 {
-	int n = '0';
+	int n = 0;
+	int a, b;
 
-	while (n <= '9')
+	while (n < 10)
 	{
-		if (n != '2' || n != '4')
-			_putchar(n);
-		n++;
+		for (a = 0; a < 2; a++)
+		{
+			for (b = 0; b < 10; b++)
+			{
+				if (a == 1 && b > 4)
+					break;
+				if (a == 1)
+					_putchar(a +'0');
+				_putchar(b + '0');
+			}
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
