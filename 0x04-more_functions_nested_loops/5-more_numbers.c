@@ -20,10 +20,11 @@ void more_numbers(void)
 				if (a == 1 && b > 4)
 					break;
 				if (a == 1)
-					_putchar(a +'0');
+					_putchar(a + '0');
 				_putchar(b + '0');
 			}
 		}
 		_putchar('\n');
+		n++;
 	}
 }
