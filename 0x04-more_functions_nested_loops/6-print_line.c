@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_diagonal - draws a digonal line on the terminal
+ * print_line - draws a straight line on the terminal
  * @n: number of times to print character _
  * Return: void
  */
