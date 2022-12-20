@@ -25,4 +25,6 @@ int main(void)
 		next = curr;
 	}
 	printf("\n");
+
+	return (0);
 }
