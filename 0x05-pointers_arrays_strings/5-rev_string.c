@@ -17,12 +17,12 @@ void rev_string(char *s)
 	if (len % 2 == 0)
 		n = len / 2;
 	else
-		n = len / 2 + 1
+		n = len / 2 + 1;
 	for (i = 0; i < n; i++)
 	{
 		x = *(s + i);
 		y = *(s + len - 1 - i);
-		*(s + i - len + 1) = y;
-		*(s + i) = x;
+		*(s + i) = y;
+		*(s + len - 1 - i) = x;
 	}
 }
