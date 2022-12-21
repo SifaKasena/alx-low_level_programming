@@ -27,8 +27,8 @@ char *cap_string(char *s)
 			case ')':
 			case '{':
 			case '}':
-				if (a[i + 1] >= 'a' && a[i + 1] <= 'z')
-					a[i + 1] += 32;
+				if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
+					s[i + 1] -= 32;
 		}
 	}
 	return (s);
