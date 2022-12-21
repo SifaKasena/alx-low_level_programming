@@ -22,7 +22,7 @@ int main(void)
 		prev = next;
 		next = curr;
 	}
-	printf("%d\n", sum);
+	printf("%ld\n", sum);
 
 	return (0);
 }
