@@ -17,7 +17,7 @@ int main(void)
 	for (i = 1; next + prev <= 4000000; i++)
 	{
 		curr = next + prev;
-		if (i % 2 == 0)
+		if (curr % 2 == 0)
 			sum += curr;
 		prev = next;
 		next = curr;
