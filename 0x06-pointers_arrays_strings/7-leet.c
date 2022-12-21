@@ -8,27 +8,18 @@
 
 char *leet(char *s)
 {
-	int i;
+	int i, n;
+	char letters[] = "AEOTL";
+	char replace[] = "43071";
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		switch (s[i])
+		for (n = 0; n < 5; n++)
 		{
-			case 'A':
-			case 'a':
-				s[i] = '4';
-			case 'E':
-			case 'e':
-				s[i] = '3';
-			case 'O':
-			case 'o':
-				s[i] = '0';
-			case 'T':
-			case 't':
-				s[i] = '7';
-			case 'L':
-			case 'l':
-				s[i] = '1';
+			if (letters[n] == s[i] || letters[n] == s[i] - 32)
+			{
+				s[i] = replace[n];
+			}
 		}
 	}
 
