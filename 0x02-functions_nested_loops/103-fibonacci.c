@@ -14,7 +14,6 @@ int main(void)
 	prev = 1;
 	next = 2;
 	sum = next;
-	printf("%ld, %ld, ", prev, next);
 	for (i = 1; next + prev <= 4000000; i++)
 	{
 		curr = next + prev;
@@ -23,7 +22,7 @@ int main(void)
 		prev = next;
 		next = curr;
 	}
-	printf("\n");
+	printf("%d\n", sum);
 
 	return (0);
 }
