@@ -7,7 +7,7 @@
  * Return: always 0 (success)
  */
 
-char *main(void)
+int main(void)
 {
 	char c;
 	char pass[50];
