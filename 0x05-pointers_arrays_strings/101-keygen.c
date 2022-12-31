@@ -14,18 +14,20 @@ int main(void)
 	int i = 0, sum = 0;
 
 	srand(time(NULL));
-	while (sum < 2646)
+	while (sum < 2772)
 	{
+		if (sum >= 2646){
+			c = 2772 - sum;
+			pass[i] = c;
+			i++;
+			break;
+		}
 		c = rand() % 93 + 33;
 		pass[i] = c;
 		sum += c;
 		i++;
 	}
-	c = 2772 - sum;
-	pass[i] = c;
-	i++;
 	pass[i] = '\0';
-	sum += c;
 	printf("%s\n", pass);
 
 	return (0);
