@@ -10,6 +10,7 @@ void print_number(int n)
 {
 	unsigned int cpy;
 
+	cpy = n;
 	if (n < 0)
 	{
 		cpy = -n;
