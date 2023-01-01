@@ -12,27 +12,41 @@ void print_buffer(char *b, int size)
 {
 	int x, y, buff = 0;
 
-	while (buff <= size)
+	if (size > 0)
 	{
-		printf("%08x: ", buff);
-		for (x = buff; x < buff + 10; x += 2)
+		while (buff < size)
 		{
-			if (x >= size)
-				printf("     ");
-			else
-				printf("%02x%02x ", b[x], b[x + 1]);
+			printf("%08x: ", buff);
+			for (x = buff; x < buff + 10; x += 2)
+			{
+				if (x >= size)
+					printf("  ");
+				else
+					printf("%02x", b[x]);
+				if (x + 1 >= size)
+					printf("   ");
+				else
+					printf("%02x ", b[x + 1]);
+			}
+			for (y = buff; y < buff + 10; y += 2)
+			{
+				if (y >= size)
+					break;
+				if (b[y] < 32)
+					b[y] = '.';
+				printf("%c", b[y]);
+				if (y + 1 >= size)
+					break;
+				if (b[y + 1] < 32)
+					b[y + 1] = '.';
+				printf("%c", b[y + 1]);
+			}
+			printf("\n");
+			buff = buff + 10;
 		}
-		for (y = buff; y < buff + 10; y += 2)
-		{
-			if (y == size)
-				break;
-			if (b[y] < 32)
-				b[y] = '.';
-			if (b[y + 1] < 32)
-				b[y + 1] = '.';
-			printf("%c%c", b[y], b[y + 1]);
-		}
+	}
+	else
+	{
 		printf("\n");
-		buff = buff + 10;
 	}
 }
