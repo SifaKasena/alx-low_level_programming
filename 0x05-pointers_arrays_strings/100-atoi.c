@@ -30,12 +30,13 @@ int _atoi(char *s)
 		{
 			num += s[i] - 48;
 			state = 1;
+			if (s[i + 1] >= '0' && s[i + 1] <= '9')
+				num *= 10;
 		}
 		else if (state == 1)
 		{
 			break;
 		}
-		num *= 10;
 	}
-	return (sign * num / 10);
+	return (sign * num);
 }
