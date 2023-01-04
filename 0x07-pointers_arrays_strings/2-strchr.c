@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
  * _strchr - returns pointer to first occurence of a character
@@ -9,8 +10,8 @@
 
 char *_strchr(char *s, char c)
 {
-	while (*s != c)
+	while (*s != c && *s != '\0')
 		s++;
 
-	return (s);
+	return (*s == '\0' ? NULL : s);
 }
