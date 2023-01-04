@@ -11,7 +11,6 @@
 char *_strstr(char *haystack, char *needle)
 {
 	int i, j, len, state;
-	char cpy[100];
 
 	i = len = state = 0;
 	while (needle[len] != '\0')
