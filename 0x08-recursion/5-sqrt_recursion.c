@@ -17,6 +17,14 @@ int _sqrt_recursion(int n)
 	return (ans);
 }
 
+/**
+ * square - loops through all squares of natural numbers and
+ * finds if one is equal to n else it returns -1
+ * @x: adrress to hold the result
+ * @n: square to test against
+ * Return: resulting integer
+ */
+
 int square(int *x, int n)
 {
 	int sq = *x * *x;
