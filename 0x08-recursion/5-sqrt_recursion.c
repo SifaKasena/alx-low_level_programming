@@ -8,5 +8,31 @@
 
 int _sqrt_recursion(int n)
 {
-	return (n);
+	int ans, x = 0;
+
+	if (n < 0)
+		ans = -1;
+	else
+		ans = square(&x, n);
+	return (ans);
+}
+
+int square(int *x, int n)
+{
+	int sq = *x * *x;
+
+	if (sq < n)
+	{
+		*x += 1;
+		square(x, n);
+	}
+	else if (sq > n)
+	{
+		*x = -1;
+	}
+	else
+	{
+		*x = *x;
+	}
+	return (*x);
 }
