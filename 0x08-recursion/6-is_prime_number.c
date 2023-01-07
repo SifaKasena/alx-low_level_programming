@@ -23,6 +23,7 @@ int is_prime_number(int n)
  * between 2 and itself
  * @x: pointer to result
  * @n: number to be checked
+ * Return: 1 if prime 0 otherwise
  */
 
 int divisible(int *x, int n)
