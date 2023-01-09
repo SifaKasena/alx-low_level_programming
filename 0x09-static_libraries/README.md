@@ -1,18 +1,18 @@
-# [0x09. C - Static libraries](https://github.com/SifaKasena/0x09-static_libraries)
+# [0x09. C - Static libraries](https://github.com/SifaKasena/alx-low_level_programming/tree/main/0x09-static_libraries)
 This directory contains tasks that cover the basics on C Static Libraries.
 
 ## Table of Content
 - [Progress](#progress)
 - [Resources](#resources)
 - [Tasks](#tasks)
- - [Mandatory Tasks](#mandatory-tasks)
- - [Advanced Tasks](#advanced-tasks)
+  - [Mandatory Tasks](#mandatory-tasks)
+  - [Advanced Tasks](#advanced-tasks)
 - [Author](#author)
 
 ## Progress
 - [x] Mandatory Tasks
- - [x] Task 0
- - [x] Task 1
+  - [x] Task 0
+  - [x] Task 1
 
 ## Resources
 > **Read or watch:**
@@ -54,13 +54,13 @@ This directory contains tasks that cover the basics on C Static Libraries.
 ```
 
 &emsp;File(s):  
-- &emsp;&emsp;&emsp;[libmy.a](https://github.com/SifaKasena/0x09-static_libraries/libmy.a) - The created static library
-- &emsp;&emsp;&emsp;[main.h](https://github.com/SifaKasena/0x09-static_libraries/main.h) - Header file containing all function prototypes
+- &emsp;&emsp;&emsp;[libmy.a](https://github.com/SifaKasena/alx-low_level_programming/blob/main/0x09-static_libraries/libmy.a) - The created static library
+- &emsp;&emsp;&emsp;[main.h](https://github.com/SifaKasena/alx-low_level_programming/blob/main/0x09-static_libraries/main.h) - Header file containing all function prototypes
 1. #### Without libraries what have we? We have no past and no future
 > Create a script called `create_static_lib.sh` that creates a static library called `liball.a` from all the `.c` files that are in the current directory.
 
 &emsp;File(s):  
-- &emsp;&emsp;&emsp;[create_static_lib.sh](https://github.com/SifaKasena/0x09-static_libraries/create_static_lib.sh) - Shell script to create `liball.a` static library
+- &emsp;&emsp;&emsp;[create_static_lib.sh](https://github.com/SifaKasena/alx-low_level_programming/blob/main/0x09-static_libraries/create_static_lib.sh) - Shell script to create `liball.a` static library
 
 ### Advanced Tasks
 There are no advanced tasks for this project.
